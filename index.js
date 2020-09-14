@@ -22,22 +22,38 @@ for (let num = 1; num <= 100; num++) {
 
 // Chessboard
 
-let black = "#";
-let row1 = '';
-let row2 = '';
-let chess = "";
-console.log(black);
+// let black = "#";
+// let row1 = '';
+// let row2 = '';
+// let chess = "";
+// console.log(black);
 
 
-for (j = 0; j < 4; j++) {
-    row1 += black + " ";
+// for (j = 0; j < 4; j++) {
+//     row1 += black + " ";
+// }
+
+// for (i = 0; i < 4; i++) {
+//     row2 += " " + black;
+// }
+
+// for (k = 0; k < 4; k++) {
+//     chess += row1 + '\n' + row2 + '\n';
+// }
+// console.log(chess)
+
+let chess2 = '';
+let string = '';
+
+for (i = 1; i <= 4; i++) {
+
+    for (j = 0; j < 4; j++) {
+        string = string + "#" + " ";
+    }
+    string = " " + string;
+    // if (i % 2 == 0) {
+
+    // }
+    string += '\n';
 }
-
-for (i = 0; i < 4; i++) {
-    row2 += " " + black;
-}
-
-for (k = 0; k < 4; k++) {
-    chess += row1 + '\n' + row2 + '\n';
-}
-console.log(chess)
+console.log(string);
