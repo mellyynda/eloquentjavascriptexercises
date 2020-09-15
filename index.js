@@ -20,27 +20,31 @@ for (let num = 1; num <= 100; num++) {
     }
 }
 
-// Chessboard
 
-// let black = "#";
-// let row1 = '';
-// let row2 = '';
-// let chess = "";
-// console.log(black);
+// Chessboard solution 1
+
+let black = "#";
+let row1 = '';
+let row2 = '';
+let chess = "";
+console.log(black);
 
 
-// for (j = 0; j < 4; j++) {
-//     row1 += black + " ";
-// }
+for (j = 0; j < 4; j++) {
+    row1 += black + " ";
+}
 
-// for (i = 0; i < 4; i++) {
-//     row2 += " " + black;
-// }
+for (i = 0; i < 4; i++) {
+    row2 += " " + black;
+}
 
-// for (k = 0; k < 4; k++) {
-//     chess += row1 + '\n' + row2 + '\n';
-// }
-// console.log(chess)
+for (k = 0; k < 4; k++) {
+    chess += row1 + '\n' + row2 + '\n';
+}
+console.log(chess)
+
+
+// Chessboard solution 2
 
 let chess2 = '';
 let string = ' ';
@@ -56,4 +60,3 @@ for (i = 1; i <= 8; i++) {
     } else string += '\n';
 }
 console.log(string);
-
