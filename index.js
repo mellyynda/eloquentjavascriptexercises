@@ -43,17 +43,17 @@ for (let num = 1; num <= 100; num++) {
 // console.log(chess)
 
 let chess2 = '';
-let string = '';
+let string = ' ';
 
-for (i = 1; i <= 4; i++) {
+for (i = 1; i <= 8; i++) {
 
     for (j = 0; j < 4; j++) {
         string = string + "#" + " ";
     }
-    string = " " + string;
-    // if (i % 2 == 0) {
 
-    // }
-    string += '\n';
+    if (i % 2 == 0) {
+        string += '\n' + " ";
+    } else string += '\n';
 }
 console.log(string);
+
